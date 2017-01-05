@@ -1,0 +1,385 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent }
+ol, ul { list-style:none }
+blockquote, q { quotes:none }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none }:focus { outline:0 }
+.clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0 }
+body{
+  font-size: 14px;
+  line-height: 1.62857143;
+  color: #383838;
+  font-weight: 300;
+  cursor: default;
+  font-family: sans-serif, "Open Sans";
+  background-color: #fff8f8;
+
+  background-size: cover;
+  transition: all 0.3s ease;
+}
+.footer{
+  
+}
+.day{
+  background: linear-gradient(to top, #ACD8EF, #7AC0E4);
+  background-attachment: fixed;
+}
+.night{
+  background: linear-gradient(to top, #3C83A7, #165473);
+  background-attachment: fixed;
+}
+.clearboth{
+  clear: both;
+}
+strong{
+  font-weight: normal;
+}
+a{
+  color: #3A9DBE;
+  text-decoration: none;
+}
+input, textarea{
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  outline: none !important;
+}
+p{
+  margin: 1em 0;
+}
+h1, .h1{
+  font-size: 32px;
+}
+h2, .h2{
+  font-size: 28px;
+}
+h3, .h3{
+  font-size: 24px;
+}
+h4, .h4{
+  font-size: 18px;
+}
+h5, .h5{
+  font-size: 16px;
+}
+.container{
+  width: 100%;
+  padding: 0px;
+}
+.col{
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+}
+.col-1of6{
+  width: 16.66667%;
+}
+.col-5of6{
+  width: 83.33333%;
+}
+.col-4of6{
+  width: 66.66667%;
+}
+.col-58proc{
+  width: 58%;
+}
+.col-45proc{
+  width: 45%;
+}
+.col-67proc{
+  width: 67%;
+}
+.col-78proc{
+  width: 78%;
+}
+.col-2of6{
+  width: 33.33333%;
+}
+.col-3of6{
+  width: 50%;
+}
+.col-press-25{
+  width: 25%;
+}
+.col-press-18{
+  width: 18%;
+}
+.col-press-20{
+  width: 20%;
+}
+.col-press-30{
+  width: 30%;
+}
+.col-press-70{
+  width: 70%;
+}
+.col-press-71{
+  width: 71%;
+}
+.col-press-51{
+  width: 51%;
+}
+.col-press-54{
+  width: 54%;
+}
+.col-press-75{
+  width: 75%;
+}
+.col-press-74{
+  width: 74%;
+}
+.col-press-80{
+  width: 80%;
+}
+.golden_section38{
+  width: 38%;
+}
+.golden_section62{
+  width: 62%;
+}
+.col-main{
+  width: 610px;
+}
+.col-padding{
+  padding: 10px;
+}
+.tac{
+  text-align: center;
+}
+.ma{
+  margin: auto;
+}
+.mlm{
+  margin-left: 1.25em !important;
+}
+.mll{
+  margin-left: 2.5em !important;
+}
+.ml-2proc{
+  margin-left: 2% !important;
+}
+.mtl{
+  margin-top: 2.5em !important;
+}
+.mtm{
+  margin-top: 1.25em !important;
+}
+.mts{
+    margin-top: 0.625em !important;
+}
+.mbl{
+  margin-bottom: 2.5em !important;
+}
+.mbm{
+  margin-bottom: 1.25em !important;
+}
+.mbs{
+    margin-bottom: 0.625em !important;
+}
+.fr{
+  float: right !important;
+}
+.fl{
+  float: left !important;
+}
+.clrw{
+  color: white;
+}
+.alert {
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 0 !important;
+  border: 1px solid transparent;
+  border-radius: 0px !important;
+  text-align: center;
+}
+.alert-success{
+  background-color: #40c781;
+  border-color: #40c781;
+  color: #ffffff;
+}
+
+/* слайды и секции*/
+.standart-page{
+  width: 960px;
+  margin: auto;
+  margin-top: 40px;
+  min-height: 420px;
+}
+.slide{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slide > img{
+  width: 100%;
+}
+.slide-content{
+  position: absolute;
+  font-size: 1.4em;
+}
+.section{
+  padding: 3em 0 1em 0;
+  max-width: 1000px;
+  width: 80%;
+  margin: auto;
+}
+
+.title-on-page{
+  color: #4a3928;
+  margin-bottom: 40px;
+}
+
+/* кнопки */
+.btn-our{
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.btn-our-green{
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    &:hover{
+      background: rgb(53, 167, 110);
+      color: white !important;
+    }
+    &:active{
+      background: rgb(33,147,90);
+      box-shadow: 0 3px rgb(33,147,90) inset;
+    }
+    &:focus{
+      color: white;
+    }
+}
+.btn-our-violete{
+    background: #de63c6;
+    box-shadow: 0 -3px #bb45a4 inset;
+    &:hover{
+      background: #bb45a4;
+      color: white !important;
+    }
+    &:active{
+      background: #bb45a4;
+      box-shadow: 0 3px #983083 inset;
+    }
+    &:focus{
+      color: white;
+    }
+} 
+.btn-our-orange{
+    background: #ff762f;
+    box-shadow: 0 -3px #cc591d inset;
+    &:hover{
+      background: #cc591d;
+      color: white !important;
+    }
+    &:active{
+      background: #bf5016;
+      box-shadow: 0 3px #bf5016 inset;
+    }
+    &:focus{
+      color: white;
+    }
+}
+.btn-our-red{
+    background: #c94933;
+    box-shadow: 0 -3px #b34027 inset;
+    &:hover{
+      background: #b34027;
+      color: white !important;
+    }
+    &:active{
+      background: #bf5016;
+      box-shadow: 0 3px #A73A20 inset;
+    }
+    &:focus{
+      color: white;
+    }
+}  
+.up-down-offset{
+  position: absolute;
+  top: 63px;
+  bottom: 0px;
+}
+@media screen and (max-width: 800px) {
+  .hidden-xs{
+    display: none;
+  }
+}
+/* декорации */
+.pinpen {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  background-image: url('/images/pin_joyacademy.png');
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}
+.pinpen-scale-1{
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+.pinbee{
+  position: absolute;
+  top: 20px;
+  right: 12%;
+  background-image: url("/images/bee.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 30%;
+  /*transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);*/
+}
+
+.card{
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  .card-row{
+    margin-bottom: 1.25em;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0.3125em 1.25em;
+  }
+}
+.pd10{
+  padding: 10px !important;
+}
+.pd20{
+  padding: 20px !important;
+}
+.pd40{
+  padding: 40px !important;
+}
+.block680{
+  width: 90%;
+  max-width: 680px;
+}
+.block980{
+  width: 90%;
+  max-width: 980px;
+}

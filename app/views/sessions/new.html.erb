@@ -1,0 +1,17 @@
+<div class='slide slide-new-session'>
+	<div class='wrap-form-advantages'>
+		<h2><img src='/images/logo-name.png' class='logoname' /></h2>
+		<div class='wrapper'>
+			<div class='welcome-form'>
+					<h3>Вход</h3>
+					<%= simple_form_for(@sign_in, url: sessions_path, html: {class: 'registration-form'}) do |f| %>
+				      <%= f.input :email, label: false, input_html: { class: 'input-sp',  placeholder: 'Электронный адрес' } %>
+				      <%= f.input :password, label: false, input_html: { class: 'input-sp',  placeholder: 'Пароль' } %>
+				      <%= f.button :submit, 'Войти', class: 'btn btn-our btn-our-green' %>
+				    <% end %>
+					<p>У Вас еще нет профиля на Joy Academy? Тогда зарегистрируйтесь.</p>
+			</div>
+			<div class='clearboth'></div>
+		</div>
+	</div>
+</div>

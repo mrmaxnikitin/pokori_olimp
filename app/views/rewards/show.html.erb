@@ -1,0 +1,29 @@
+<% 
+	if @reward.prize == 0
+		prize = "Участник"
+	else
+		prize = @reward.prize.to_s + " место"
+	end 
+%>
+<div class='slide slide-reward'>
+	<% if !@reward.paid %>
+		<div class='pinpen'></div>
+		<div class='reward-data'>
+			<img src='/diploma_samples/<%=@reward.number%>.jpg' />
+			<div class='participant'>
+				<h1><%= prize %></h1>
+				<h2><%= @reward.name %></h2>
+			</div>
+			<div class='clearboth'></div>
+		</div>
+		<a id='buy-diploma' class='btn btn-our btn-our-green'>Приорести этот диплом за 100 рублей</a>
+		<div class='payment-form'>
+			Форма оплаты
+		</div>
+	<% else %>
+		<div class='col-3of6 ma mtl img-diploma'>
+			<h1><%= prize %></h1>
+			<img src='/diplomas/diploma.jpg' width='100%' />
+		</div>
+	<% end %>
+</div>

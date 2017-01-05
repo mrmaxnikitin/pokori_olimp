@@ -1,0 +1,33 @@
+<div class='slide welcome-home'>
+	<img id="image-main-page" src="/images/homa.jpg" alt='покори олимп | дистанционные олимпиады по школьным предметам' data-pin-nopin="true">
+	<div class="slide-content" id="slide-content1">
+		<img src='/images/logo-name11.png' alt='покори олимп | дистанционные олимпиады для школьников' class='logoname'/>
+		<h1>Дистанционные олимпиады 2017</h1>
+		<h2>Олимпиады по школьным предметам.</br>Бесплатное участие и мгновенный результат.</h2>
+		<!--<div class='activities'>
+			<a class='btn btn-our btn-our-green'>Зарегист!</a>
+			<a class='btn btn-our btn-our-blue'>Попробовать бесплатно</a>
+		</div>-->
+  </div>
+</div>
+<div class='olympics-home mbl'>
+	  <h1 class='tac title-on-page'>Наши олимпиады</h1>
+	  <% @contests.each do |contest|  %>
+		  <%= link_to contest_path(contest) do %>
+				<div class='col col-press-25'>
+					<div class='card'>
+						<img src='<%=contest.image%>' alt='Олимпиады по математике, информатике, русскому и английскому языкам'/>
+						<h4><%=contest.title%></h4>
+					</div>
+				</div>
+			<% end %>
+		<% end %>
+		<!--<div class='col col-33p game-olympics'>
+			<img src='/images/game-olympics.gif' />
+			<h4>Обучающие игры</h4>
+		</div>-->
+		<div class='clearboth'></div>
+</div>
+
+
+

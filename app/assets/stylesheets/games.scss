@@ -1,0 +1,108 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.games-all{
+	padding: 2.5em 0 0 0 !important;
+	div{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	img{
+		width: 90%;
+		border-radius: 3px;
+		margin-bottom: 6px;
+	}
+}
+.game-show{
+	padding: 3em 0 2em 0;
+	width: 800px !important;
+}
+
+#game1{
+	height: 600px;
+	border-radius: 3px;
+  border: 1px solid #E4E4E4;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+	padding: 20px;
+	/*background-image: linear-gradient(rgb(254, 238, 125) 36%, rgb(255, 192, 192) 100%);*/
+	background: url('/images/img-game1.png') 0% 0% no-repeat, url('/images/img1-game1.png') 100% 100% no-repeat, #faf8f2;
+	background-size: 100%;
+	.result{
+		text-align: center;
+		margin: 155px 0 10px 0;
+		h1{
+			margin-top: 5px;
+			color: #3b9839;
+			font-size: 38px !important;
+		}
+	}
+	.card{
+		width: 50%;
+		margin: 50px auto;
+		margin-top: 0px;
+		border: 1px solid #E4E4E4;
+		border-radius: 3px;
+	  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+	  background-color: white;
+	  text-align: center;
+	  padding: 40px;
+	  padding-top: 15px;
+	  .range{
+	  	margin-bottom: 15px;
+	  	img{
+	  		width: 18px;
+	  	}
+	  }
+	  .buttons{
+	  	margin-top: 20px;
+	  	button{
+	  		outline: none !important;
+	  		margin: 0 7px
+	  	}
+	  }
+	}
+}
+.get-right-answer{
+	animation: animation-right-answer  0.5s ease-out;
+}
+.get-wrong-answer{
+	animation: animation-wrong-answer 0.5s ease-out;
+}
+@-webkit-keyframes animation-right-answer {
+	from {background-color: #effff6;}
+	50% {background-color: #e8fdf2;}
+	to {background-color: white;}
+}
+@keyframes animation-right-answer{
+	from {background-color: #effff6;}
+	50% {background-color: #e8fdf2;}
+	to {background-color: white;}
+}
+@-webkit-keyframes animation-wrong-answer  {
+	from {background-color: #fde9e6;}
+	50% {background-color: #fde1dc;}
+	to {background-color: white;}
+}
+@keyframes animation-wrong-answer {
+	from {background-color: #fde9e6;}
+	50% {background-color: #fde1dc;}
+	to {background-color: white;}
+}
+
+
+
+
+.monstriki-invite{
+	.golden_section38{
+		img{
+			width: 100%;
+			border-radius: 4px;
+		}
+	}
+	.golden_section62{
+		padding: 10px 0px 10px 40px;
+	}
+}
+
+

@@ -1,0 +1,13 @@
+<div class='section contest-new'>
+	  <h1 class='text-align-center title-on-page'>Редактировать олимпиаду</h1>
+	  <%= simple_form_for(@game, url: game_path, html: { class: 'form-vertical' }) do |f| %>
+	    <%= f.input :title, label: false, input_html: { placeholder: 'Название' } %>
+	    <%= f.input :description, label: false, input_html: { placeholder: 'Описание' } %>
+	    <%= f.input :category, label: false, input_html: { placeholder: 'Категория (предметная, развивающая, игровая)' } %>
+	    <%= f.input :age, label: false, input_html: { placeholder: 'Возрастная группа (например, 1 класс или 12-14 лет)' } %>
+	    <%= f.input :image, label: false,  input_html: { placeholder: 'Изображение (ссылка)' } %>
+	    <%= f.button :submit, "Сохранить", class: 'btn btn-our btn-our-blue' %>
+	  <% end %>
+		<div class='clearboth'>
+		</div>
+</div>

@@ -1,0 +1,28 @@
+<div class='slide contest-show'>
+	<!--<img class='contest-background-img' src='http://www.goldrhapsody.com/wp-content/uploads/2015/09/bigstock-Honey-and-Herbal-tea-on-wooden-67103101.jpg' /> -->
+	<div class='contest-content'>
+		<div class='col golden_section38 pd20'>
+			<img src='<%= @contest.image %>' class='contest-image'/>
+		</div>
+		<div class='col golden_section62 pd20'>
+			<h1 class='contest-title'><%= @contest.title %></h1>
+			<div class='statistic'>
+				Участники: <b class='participants'><%= @number_participants %></b>
+				<h4>Выберите класс и участвуйте!</h4>
+				<%= link_to '1', participate_contest_path(@contest, classroom: 1), class: 'btn btn-our btn-our-green' %>
+				<%= link_to '2', participate_contest_path(@contest, classroom: 2), class: 'btn btn-our btn-our-green' %>
+				<%= link_to '3', participate_contest_path(@contest, classroom: 3), class: 'btn btn-our btn-our-green' %>
+				<%= link_to '4', participate_contest_path(@contest, classroom: 4), class: 'btn btn-our btn-our-green' %>
+			</div>
+			<p><%= @contest.description %></p>
+			<% if logged_in? && current_user.admin? %>
+				<div>
+					<%= link_to 'Изменить', edit_contest_path(@contest) %> |
+					<%= link_to 'Удалить', contest_path(@contest), method: :delete, data: {no_turbolink: true} %>
+				</div>
+			<% end %>
+		</div>
+		<div class='clear'></div>
+	</div>
+
+</div>

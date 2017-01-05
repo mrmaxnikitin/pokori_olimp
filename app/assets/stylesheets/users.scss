@@ -1,0 +1,139 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.slide-new-user{
+	.pinpen{
+		top: 300px;
+	}
+	.wrap-form-advantages{
+		max-width: 1240px;
+		padding: 20px;
+		margin: 70px auto;
+		margin-bottom: 0px;
+		h2{
+		}
+		.wrapper{
+			margin-top: 50px;
+			.reg-form{
+				text-align: center;
+				width: 45%;
+				float: left;
+				h4{
+					font-weight: bold;
+				}
+				form{
+					padding: 25px !important;
+					border: 1px solid #E7E7E7;
+					border-radius: 3px;
+					margin-top: 20px;
+					input{
+						width: 100%;
+						margin: 7px 0;
+					}
+				}
+			}
+			.advantages{
+				/*margin-top: 37px;*/
+				text-align: left;
+				float: left;
+				margin-left: 2%;
+				width: 53%;
+				border-radius: 3px;
+				padding: 25px;
+				padding-bottom: 0px;
+				margin-top: 16px;
+				h3{
+				}
+				.advantages-list{
+					margin-top: 8px;
+					.advantage{
+						width: 100%;
+						padding: 10px;
+						
+						img{
+							height: 42px;
+						}
+						span{
+							position: relative;
+					    top: -16px;
+					    left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.standart-page{
+	/*.wrap-profile-info{
+		background-color: #faf9f4;
+		padding: 20px;
+		.profile-info{
+			width: 1040px;
+			margin: auto;
+			height: 217px;
+			.avatar{
+				float: left;
+				height: 217px;
+				border-radius: 3px;
+			}
+			.data-action{
+				float: left;
+				padding: 8px 15px;
+				h2{
+					font-weight: bold;
+					margin-bottom: 5px;
+				}
+				.wrap-honey{
+					margin-top: 20px;
+					.honey-img{
+						width: 36px;
+					}
+					span{
+						position: relative;
+						bottom: 7px;
+						color: #eaa538;
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	} */
+	.menu-header{
+		width: 100%;
+		padding: 0px 0px 12px 0px;
+			a{
+		    -webkit-transition-property: all;
+		    transition-property: all;
+		    -webkit-transition-duration: 0.2s;
+		    transition-duration: 0.2s;
+		    text-decoration: none;
+		    border-radius: 100px;
+		    text-align: center;
+		    padding: 6px 15px;
+		    margin: 10px 0;
+		    color: #6f6f6f;
+		    font-size: 16px;
+		    &:hover{
+		    	background-color: #dededa;
+		    }
+			}
+	}
+	.main-content{
+		background-color: #fff;
+		border-radius: 3px;
+		.content{
+			padding: 15px;
+			margin-right: 300px;
+			border-right: 1px solid #eaebec;
+		}
+		.right-bar{
+			float: right;
+			border-radius: 0 5px 0 0;
+	    width: 260px;
+		}
+	}
+
+}

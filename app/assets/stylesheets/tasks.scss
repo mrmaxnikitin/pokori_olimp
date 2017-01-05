@@ -1,0 +1,197 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.participate-page{
+  background-color: #fff8ef;
+  background-image: url(/images/background3.jpg);
+  background-size: cover;
+	/*background: linear-gradient(#2f9fd5, #51aedb);*/
+  padding-top: 2px;
+  padding-bottom: 70px;
+  .wrap-bar-task{
+  	text-align: center;
+  	width: 98%;
+    max-width: 1200px;
+    margin: 20px auto;
+    .result{
+      color: #ffffff;
+    	.positive-result{
+    		font-size: 50px;
+    		span{
+    			position: relative;
+    			bottom: 15px;
+    		}
+    	}
+    	.negative-result{
+    		font-size: 50px;
+    		span{
+    			position: relative;
+    			bottom: 15px;
+    		}
+    	}
+    	img{
+    		width: 65px;
+    	}
+    }
+    .button-task{
+      text-align: center;
+      a{
+        width: 255px;
+        font-size: 20px;
+      }
+    }
+    .statistics-tasks{
+    	div{
+    		float: right;
+    		font-size: 30px;
+    		position: relative;
+    		top: 19px;
+    		color: rgb(111, 111, 111);
+    		.sum-progress{
+          color: white;
+    			margin-right: 25px;
+    			span{
+    				position: relative;
+    				bottom: 4px;
+    			}
+    			img{
+	    			width: 30px;
+	    		}
+    		}
+    	}
+    }
+  }
+}
+.right-answer-task{
+  color: #ffffff;
+  background-color: #2fb770;
+  border-radius: 3px;
+  padding: 2px 5px 2px 50px;
+}
+.right-answer-task{
+  color: #ffffff;
+  background-color: red;
+  border-radius: 3px;
+  padding: 2px 5px 2px 50px;
+}
+.task-participate{
+  padding: 40px;
+	width: 98%;
+	max-width: 1200px;
+	margin: 40px auto;
+	margin-bottom: 0px;
+	border-radius: 3px;
+	border: 1px solid #E4E4E4;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	background-color: white;
+	img{
+		border-radius: 3px;
+		float: left;
+		z-index: 1;
+    vertical-align: top;
+    width: 38%;
+	}
+	.task-body{
+		float: left;
+		padding: 1.1em 2em;
+    width: 62%;
+    color: #353535;
+    .text{
+    	font-size: 1.1em !important;
+    	font-weight: 600;
+    }
+    .variants{
+    		.wrap-radio{
+    			margin: 1.8em 0;
+    			input[type=radio] {
+					  display: none;
+					}
+					label {
+				    display: inline-block;
+				    cursor: pointer;
+				    position: relative;
+				    padding-left: 50px;
+				    margin-right: 15px;
+				    font-size: 15px;
+				    font-weight: normal !important;
+					}
+    			label:before {
+				    content: "";
+				    display: inline-block;
+				    width: 42px;
+				    height: 42px;
+				    margin-right: 10px;
+				    position: absolute;
+				    left: 0;
+				    bottom: -8px;
+				    border-radius: 12px;
+				    /* background-color: #FFDE3B; */
+				    background-image: url(/images/variant_answer.png);
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    background-size: 36px;
+				    /*box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);*/
+					}
+					input[type=radio]:checked + label:before {
+				    background-image: url(/images/right_answer.png);
+					}
+
+    		}
+
+    }
+	}
+}
+
+.participate-result{
+	text-align: center;
+	width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  h1{
+  	margin: 20px 0px;
+  }
+  .user-data{
+  	margin-top: 20px;
+  	div{
+  		margin-bottom: 20px;
+  		input{
+  			width: 60%;
+  			min-width: 380px;
+        font-size: 20px;
+  		}
+  	}
+  }
+  a{
+  	width: 60%;
+  	min-width: 380px;
+	  font-size: 24px;
+  }
+}
+.participate-result-diploma{
+  text-align: center;
+  width: 98%;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-size: 52px;
+  a{
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .participate-page{
+    .wrap-bar-task{
+      .result{
+        .positive-result{
+          font-size: 30px;
+        }
+        .negative-result{
+          font-size: 30px;
+        }
+        img{
+          width: 50px;
+        }
+      }
+    }
+  }
+}

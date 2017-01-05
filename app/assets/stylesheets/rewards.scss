@@ -1,0 +1,88 @@
+// Place all the styles related to the Reward controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.slide-reward{
+	text-align: center;
+	h1{
+		color: #3A9DBE;
+		font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+	}
+	.reward-data{
+		width: 800px;
+		margin: 40px auto;
+		border: 1px solid #E7E7E7;
+		border-radius: 3px;
+		background-color: white;
+		padding: 30px;
+		box-shadow: 0px 0px 10px #cecece;
+		img{
+			float: left;
+			width: 38%;
+			border-radius: 3px;
+			border-bottom-right-radius: 0px;
+			border-top-right-radius: 0px;
+			border: 1px solid #E7E7E7;
+		}
+		.participant{
+			float: left;
+			text-align: left;
+			width: 62%;
+			padding: 10px 30px;
+			h2{
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			h4{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	a{
+		width: 600px;
+		font-size: 24px;
+	}
+	.payment-form{
+		display: none;
+	}
+}
+.rewards{
+	p{
+		font-size: 16px;
+	}
+	table{
+		width: 100%;
+		border: 1px solid #c7bbaa;
+		tr{
+			border-bottom: 1px solid #c7bbaa;
+			td, th{
+				padding: 12px 8px;
+				text-align: center;
+			}
+		}
+	}
+}
+.img-diploma{
+	h1{
+		font-size: 120px;
+	}
+}
+.diploma-samples{
+	h4{
+		color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+	}
+	img{
+		width: 33.3%;
+		padding: 10px;
+		max-width: 254px;
+		max-height: 351px;
+		cursor: pointer;
+	}
+	.emphasize{
+		background-color: #e76e30;
+	}
+}

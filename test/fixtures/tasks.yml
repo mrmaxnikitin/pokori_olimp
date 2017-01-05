@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  text: MyText
+  var1: MyString
+  var2: MyString
+  var3: MyString
+  var4: MyString
+  answer: MyString
+
+two:
+  type: 
+  text: MyText
+  var1: MyString
+  var2: MyString
+  var3: MyString
+  var4: MyString
+  answer: MyString

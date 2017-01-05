@@ -1,0 +1,39 @@
+<div class='slide block980 ma mtl rewards'>
+	<div class='tac'>
+		<h1>Итоги</h1>
+		<p>Найдите свою фамилию, после этого скачайте диплом.</p>
+		<table>
+			<tbody>
+				<tr class='tac'>
+			    <th width='5%'>№</th>
+			    <th width='15%'>Дата</th>
+			    <th width='60%'>Участник</th>
+			    <th width='20%'>Степень</th>
+			   </tr>
+				<% @rewards.each do |reward|  %>
+					<% 
+						if reward.prize == 0
+							prize = "Участник"
+						else
+							prize = reward.prize.to_s + " степень"
+						end 
+					%>
+					<tr>
+						<td width='5%'>
+							<%= reward.id %>
+						</td>
+						<td width='15%'>
+							<%= Russian::strftime(reward.created_at, "%d %B %Y") %>
+						</td>
+						<td width='60%'>
+							<b><%= link_to reward.name, reward_path(reward) %></b>
+						</td>
+						<td width='20%'>
+							<%= prize %>
+						</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>

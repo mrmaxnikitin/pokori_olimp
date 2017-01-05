@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PokoriOlimp</title>
+  <title>Дистанционные олимпиады для школьников 2017 | Джой Олимпик</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta name="description" content="Всероссийские дистанционные олимпиады по математике, русскому и английскому языкам. Результат сразу после участия!"/>
+  <meta name="keywords" content="дистанционные олимпиады, всероссийские дистанционные олимпиады, дистанционная олимпиада по математике, дистанционная олимпиада по русскому языку, дистанционная олимпиада по английскому языку, дистанционные олимпиады для школьников, интернет олимпиады"/>
+
+  <meta property="vk:title" content="Дистанционные олимпиады для школьников 2017 | Джой Олимпик" />
+  <meta property="vk:description" content="Всероссийские дистанционные олимпиады по математике, русскому и английскому языкам. Результат сразу после участия!" />
+  <meta property="vk:url" content="http://joy-olympic.ru" />
+  <meta property="vk:image" content="http://joy-olympic.ru/images/logo-text1.png" />
+  <meta property="vk:type" content="website"/>
+
+  <meta name="yandex-verification" content="44097bc71d796749" />
+
+  <%= render "partials/metrika" unless current_user.try(:admin?) %>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js'></script>
+  <link rel="stylesheet" href="http://webfonts.ru/import/arimo.css" type="text/css" media="screen" />
+  <link href="http://allfont.ru/css/?fonts=open-sans" rel="stylesheet" type="text/css" />
+  <link href="http://allfont.ru/css/?fonts=pt-sans" rel="stylesheet" type="text/css" />
+  <link href="http://webfonts.ru/import/barkentina.css" rel="stylesheet" type="text/css" />
+  <link href="http://webfonts.ru/import/arnamuserif.css" rel="stylesheet" type="text/css" />
+  <link href="http://webfonts.ru/import/gentium.css" rel="stylesheet" type="text/css" />
+  <link href="http://webfonts.ru/import/linlibslanted.css" rel="stylesheet" type="text/css" />
+  <link href="http://webfonts.ru/import/merriweather.css" rel="stylesheet" type="text/css" />
+  <link href="http://webfonts.ru/import/notoserif.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class=''>
 
-<%= yield %>
+    <div id="site-hat">
+        <%= link_to root_path do %>
+          <img class="hidden-xs" src="/images/logo-text1.png" alt='джой олимпиады | дистанционные олимпиады для школьников' id="logo">
+        <% end %>
+        <nav>
+          <%= link_to 'Главная', root_path %>
+          <%= link_to 'Итоги', rewards_path %>
+          <%= link_to 'Награды', honors_path %>
+          <%= link_to 'Как принять участие?', instruction_path %>
+        </nav>
+    </div>
 
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+    <% end %>
+
+    <div class='container'>
+      <div class='wrap-content'>
+        <%= yield %>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="tac mtl">
+        <hr>
+        <p>
+          <a href="rule.docx" class="privLink">Положение о проведение Всероссийских олимпиад</a> <a href="/contacts">Контакты</a>
+          <br>
+        </p>
+        <p>Организатор: <a href='http://ya-geniy.ru'>Я гений</a> (СМИ)</p>
+      </div>
+    </div>
 </body>
 </html>

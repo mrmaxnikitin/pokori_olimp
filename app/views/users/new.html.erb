@@ -1,0 +1,39 @@
+<div class='slide slide-new-user'>
+	<div class='hidden-xs pinbee'></div>
+	<div class='wrap-form-advantages'>
+		<h3>Спасибо, что нашли время зарегистрировать аккаунт для Вашего ребенка!</h3>
+		<div class='wrapper'>
+			<div class='reg-form'>
+					<h4>Регистрация</h4>
+					<%= simple_form_for(@user, url: users_path, html: { class: 'registration-form' }) do |f| %>
+				      <%= f.input :name, label: false, input_html: { class: 'input-sp', placeholder: 'Имя' } %>
+				      <%= f.input :email, label: false, input_html: { class: 'input-sp',  placeholder: 'Электронный адрес' } %>
+				      <%= f.input :password, label: false, input_html: { class: 'input-sp',  placeholder: 'Пароль' } %>
+				      <%= f.input :password_confirmation, label: false,  input_html: { class: 'input-sp',  placeholder: 'Повторите пароль' } %>
+				      <%= f.button :submit, 'Зарегистрироваться', class: 'btn btn-our btn-our-green' %>
+				  <% end %>
+					<p>У Вас уже есть профиль? Тогда войдите.</p>
+			</div>
+			<div class='advantages'>
+				<h3><span>Зачем регистрироваться?</span></h3>
+				<div class='advantages-list'>
+					<div class='advantage'>
+						<img src = '/images/free.png'/><span>Бесплатные дипломы</span>
+					</div>	
+					<div class='advantage'>
+						<img src = '/images/teddy_bear.png'/><span>Виртуальный персонаж</span>
+					</div>
+					<div class='advantage'>
+						<img src = '/images/sunsmile.png'/><span>Улыбка на лице Вашего ребенка</span>
+					</div>
+					<div class='advantage'>
+						<img src = '/images/writedown.png'/><span>Книга знаний</span>
+					</div>
+					<div class='clearboth'></div>
+				</div>
+				<!--<img src='/images/creatures.png'  data-pin-nopin="true"/>-->
+			</div>
+			<div class='clearboth'></div>
+		</div>
+	</div>
+</div>

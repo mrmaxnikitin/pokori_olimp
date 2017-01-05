@@ -1,0 +1,10 @@
+
+<div class='slide contest-show'>
+	<div class='contest-content tac'>
+		<h2 class='h--thin mbm'><span class='prxs'>Активация диплома</span></h2>
+		<%= simple_form_for(@reward, url: get_activate_diploma_path) do |f| %>
+				<%= f.input :id, label: false, input_html: { class: 'input-sp',  placeholder: 'id диплома' } %>
+		    <%= f.button :submit, 'Активировать диплом', class: 'btn btn-our btn-our-green mtl' %>
+		<% end %>
+	</div>
+</div>

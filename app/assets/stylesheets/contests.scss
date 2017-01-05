@@ -1,0 +1,89 @@
+// Place all the styles related to the Contests controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contests-all{
+	padding: 2.5em 0 0 0 !important;
+    .col{
+        padding: 10px;
+    }
+    .card{
+        padding: 30px !important;
+        h4{
+            margin-top: 10px;   
+        }
+    }
+	div{
+		text-align: center;
+	}
+	img{
+		width: 100%;
+		border-radius: 3px;
+		margin-bottom: 6px;
+	}
+}
+.contest-new{
+	text-align: center;
+	input, textarea{
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	textarea{
+		height: 200px;
+	}
+}
+.contest-show{
+	padding: 3em 0 2em 0;
+	.contest-background-img{
+		width: 100%;
+	}
+	.contest-content{
+        width: 98%;
+        max-width: 900px;
+        margin: auto;
+        border-radius: 3px;
+        .contest-image{
+        	width: 100%;
+        	border-radius: 3px;
+        	margin-bottom: 1.5em;
+        }
+        .contest-title{
+        	color: #e86134;
+        	font-weight: bold;
+        }
+        p{
+        	font-size: 18px;
+        	margin-bottom: 0px; 
+        }
+        .more{
+        	color: rgba(0,0,0,0.5);
+        	cursor: pointer;
+        	margin: 0px;
+        	text-decoration: underline;
+        }
+        .statistic{
+        	margin-top: 10px;
+        	font-size: 22px;
+        	color: rgba(0,0,0,0.5);
+            .btn{
+                border-radius: 100px;
+                background: #de63c6;
+                box-shadow: 0 -3px #bb45a4 inset;
+            }
+            h4{
+                margin: 15px 0px;
+                font-weight: 500;
+                color: black;
+            }
+        	a{
+        		color: white;
+                text-decoration: none;
+        	}
+        	.participants{
+        	}
+        	.price{
+        		color: #35a76e;
+        	}
+        }
+	}
+}

@@ -1,0 +1,33 @@
+<div class='section contests-all'>
+	  <h1 class='text-align-center title-on-page'>Олимпиады</h1>
+	  <% @contests.each do |contest| %>
+	  	<%= link_to contest_path(contest) do %>
+				<div class='col col-3of6'>
+					<div class='card'>
+						<img src='<%= contest.image %>' />
+						<h4><%= contest.title %></h4>
+					</div>
+				</div>
+				<div class='col col-3of6'>
+					<div class='card'>
+						<img src='<%= contest.image %>' />
+						<h4><%= contest.title %></h4>
+					</div>
+				</div>
+				<div class='col col-3of6'>
+					<div class='card'>
+						<img src='<%= contest.image %>' />
+						<h4><%= contest.title %></h4>
+					</div>
+				</div>
+				<div class='col col-3of6'>
+					<div class='card'>
+						<img src='<%= contest.image %>' />
+						<h4><%= contest.title %></h4>
+					</div>
+				</div>
+			<% end %>
+		<% end %>
+		<div class='clearboth'>
+		</div>
+</div>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: MyString
+  institution: MyString
+  prize: 1
+  score: 1
+  paid: false
+  number: 1
+  contest_id: 
+  user_id: 
+
+two:
+  name: MyString
+  age: MyString
+  institution: MyString
+  prize: 1
+  score: 1
+  paid: false
+  number: 1
+  contest_id: 
+  user_id: 
