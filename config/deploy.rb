@@ -1,9 +1,9 @@
-set :application, 'joyolympic'
+set :application, 'pokoriOlimp'
 set :deploy_user, 'deploy'
 
 # setup repo details
 set :scm, :git
-set :repo_url, 'git@bitbucket.org:aisberg/edugame.git'
+set :repo_url, 'git@github.com:mrmaxnikitin/pokori_olimp.git'
 
 # setup rbenv.
 set :rbenv_type, :system
