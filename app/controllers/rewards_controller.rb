@@ -18,29 +18,8 @@ class RewardsController < ApplicationController
       when 3
          prize = 'III степени'
       end
-
-      case @reward.number
-      when 1
-         @output_diploma = @reward.diploma_number1(780, prize)
-      when 2
-         @output_diploma = @reward.diploma_number2(680, prize)
-      when 3
-         @output_diploma = @reward.diploma_number3(770, prize)
-      when 4
-         @output_diploma = @reward.diploma_number4(970, prize)
-      when 5
-         @output_diploma = @reward.diploma_number5(690, prize)
-      when 6
-         @output_diploma = @reward.diploma_number6(690, prize)
-      when 7
-         @output_diploma = @reward.diploma_number7(690, prize)
-      when 8
-         @output_diploma = @reward.diploma_number8(690, prize)
-      when 9
-         @output_diploma = @reward.diploma_number9(980, prize)
-      when 10
-         @output_diploma = @reward.diploma_number10(690, prize)
-      end
+      
+      @output_diploma = @reward.diploma_number1(920, prize, @reward.number)
     end
   end
 
