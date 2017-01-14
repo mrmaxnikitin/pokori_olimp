@@ -210,6 +210,7 @@ const TaskBox = React.createClass({
           <div className='participate-result animated bounceIn'>
             <div className='h3 clrw mtl'>Поздравляем! Вы успешно прошли олимпиаду!</div>
             <div className='h1 clrw mbm'>Ваши баллы: {this.state.sum_right_answers}</div>
+            <p>Заполняя данные для получения диплома, вы даете согласие на обработку персональных данных</p>
             <div className='user-data'>
               <div>
                 <input className='tac' ref='name' type='text' placeholder='Электронная почта' />
