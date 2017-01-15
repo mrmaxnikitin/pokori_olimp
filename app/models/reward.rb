@@ -32,7 +32,7 @@ class Reward < ActiveRecord::Base
       if diploma_number == 10
         c.fill '#ffffff'
       end
-      c.draw "text 840,2260 '№ #{self.id}'"
+      c.draw "text 840,2260 '№ П-#{self.id}'"
     end
     output_diploma = "./public/diplomas/diploma#{dnum}.jpg"
     image.write output_diploma

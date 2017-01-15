@@ -88,7 +88,7 @@ const TaskBox = React.createClass({
     if(this.state.diploma_id && name.length && age.length && institution.length){
 
       var prize
-      sum_wrong_answers = 15 - this.state.sum_right_answers
+      sum_wrong_answers = 10 - this.state.sum_right_answers
       if(sum_wrong_answers == 0 || sum_wrong_answers == 1){
         prize = 1
       }else if(sum_wrong_answers == 2 || sum_wrong_answers == 3){
