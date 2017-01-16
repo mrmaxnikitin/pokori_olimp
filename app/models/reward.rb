@@ -6,12 +6,17 @@ class Reward < ActiveRecord::Base
     dnum = rand(100)
     image = MiniMagick::Image.open("./public/original_diplomas/#{diploma_number}.jpg")
 
-    if self.contest_id == 1 subject = "по русскому языку"
-    elsif self.contest_id == 2 subject = "по математике"
-    elsif self.contest_id == 3 subject = "по окружаещему миру"
-    elsif self.contest_id == 4 subject = "по литературе"
+    subject = ""
+    if self.contest_id == 1
+      subject = "по русскому языку"
+    elsif self.contest_id == 2
+      subject = "по математике"
+    elsif self.contest_id == 3
+      subject = "по окружаещему миру"
+    elsif self.contest_id == 4
+      subject = "по литературе"
     end
-    
+
     image.resize "1654x2339"
     image.format "jpg"
     image.combine_options do |c|
