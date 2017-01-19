@@ -5,6 +5,15 @@
 		prize = @reward.prize.to_s + " место"
 	end 
 %>
+<% if @reward.contest_id == 1
+      subject = "по математике"
+    elsif @reward.contest_id == 2
+      subject = "по русскому языку"
+    elsif @reward.contest_id == 3
+      subject = "по английскому языку"
+    elsif @reward.contest_id == 4
+      subject = "по окружающему миру"
+    end %>
 <div class='slide slide-reward'>
 	<% if !@reward.paid %>
 		<div class='pinpen'></div>
@@ -13,6 +22,7 @@
 			<div class='participant'>
 				<h1><%= prize %></h1>
 				<h2><%= @reward.name %></h2>
+				<h3><%= subject %></h3>
 			</div>
 			<div class='clearboth'></div>
 		</div>
