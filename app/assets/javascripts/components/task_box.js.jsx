@@ -89,11 +89,11 @@ const TaskBox = React.createClass({
 
       var prize
       sum_wrong_answers = 10 - this.state.sum_right_answers
-      if(sum_wrong_answers == 0 || sum_wrong_answers == 1){
+      if(sum_wrong_answers == 0){
         prize = 1
-      }else if(sum_wrong_answers == 2 || sum_wrong_answers == 3){
+      }else if(sum_wrong_answers == 1 || sum_wrong_answers == 2){
         prize = 2
-      }else if(sum_wrong_answers == 4 || sum_wrong_answers == 5){
+      }else if(sum_wrong_answers == 4){
         prize = 3
       }else prize = 0
       
