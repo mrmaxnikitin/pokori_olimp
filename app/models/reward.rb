@@ -12,7 +12,7 @@ class Reward < ActiveRecord::Base
     elsif self.contest_id == 2
       subject = "по математике"
     elsif self.contest_id == 3
-      subject = "по окружаещему миру"
+      subject = "по окружающему миру"
     elsif self.contest_id == 4
       subject = "по литературе"
     end
