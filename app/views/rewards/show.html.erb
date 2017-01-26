@@ -6,13 +6,13 @@
 	end 
 %>
 <% if @reward.contest_id == 1
-      subject = "по математике"
-    elsif @reward.contest_id == 2
       subject = "по русскому языку"
+    elsif @reward.contest_id == 2
+      subject = "по математике"
     elsif @reward.contest_id == 3
-      subject = "по английскому языку"
-    elsif @reward.contest_id == 4
       subject = "по окружающему миру"
+    elsif @reward.contest_id == 4
+      subject = "по литературе"
     end %>
 <div class='slide slide-reward'>
 	<% if !@reward.paid %>
@@ -26,6 +26,7 @@
 			</div>
 			<div class='clearboth'></div>
 		</div>
+		<h4 class='mbm'>Диплом станет доступен для скачивания в течение 12 часов после оплаты</h4>
 		<a id='buy-diploma' class='btn btn-our btn-our-green'>Приобрести этот диплом за 100 рублей</a>
 		<div class='payment-form'>
 			<form target="_blank" action="https://money.yandex.ru/eshop.xml" method="post">

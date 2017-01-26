@@ -219,7 +219,7 @@ const TaskBox = React.createClass({
                 <input className='tac' ref='name' type='text' placeholder='Фамилия и имя участника' maxLength="25" />
               </div>
               <div>
-                <input className='tac' ref='age' type='text' placeholder='Класс (возраст)' maxLength="44" />
+                <input className='tac' ref='age' type='text' placeholder='Класс' maxLength="44" />
               </div>
               <div>
                 <input className='tac' ref='institution' type='text' placeholder='Учебное заведение' maxLength="44" />
