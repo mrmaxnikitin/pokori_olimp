@@ -54,7 +54,7 @@ class Reward < ActiveRecord::Base
         c.draw "text 505,#{position+480} 'за участие во Всероссийской олимпиаде'"
       end
       c.pointsize '43'
-      c.draw "text 0,#{position+560} '#{subject}'"
+      c.draw "text 505,#{position+560} '#{subject}'"
       c.pointsize '30'
       c.draw "text 767,1650 '#{Russian::strftime(self.created_at, "%d.%m.%Y г.")}'"
       c.pointsize '26'
