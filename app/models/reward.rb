@@ -42,16 +42,16 @@ class Reward < ActiveRecord::Base
       c.draw "text 505,#{position+240} '#{self.age}'"
       c.pointsize '43'
       if institution.size > 44
-        c.draw "text 0,#{position+320} '#{fp_institution}'"
-        c.draw "text 0,#{position+400} '#{sp_institution}'"
+        c.draw "text 505,#{position+320} '#{fp_institution}'"
+        c.draw "text 505,#{position+400} '#{sp_institution}'"
       else
-        c.draw "text 0,#{position+320} '#{institution}'"
+        c.draw "text 505,#{position+320} '#{institution}'"
       end
       c.pointsize '43'
       if self.prize != 0
-        c.draw "text 0,#{position+480} 'за победу во Всероссийской олимпиаде'"
+        c.draw "text 505,#{position+480} 'за победу во Всероссийской олимпиаде'"
       else
-        c.draw "text 0,#{position+480} 'за участие во Всероссийской олимпиаде'"
+        c.draw "text 505,#{position+480} 'за участие во Всероссийской олимпиаде'"
       end
       c.pointsize '43'
       c.draw "text 0,#{position+560} '#{subject}'"
