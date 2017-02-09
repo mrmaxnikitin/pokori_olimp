@@ -173,8 +173,15 @@
   max-width: 1200px;
   margin: 20px auto;
   font-size: 52px;
-  a{
-    font-size: 52px;
+}
+.other-our-sites{
+  .card{
+    img{
+      width: 100%;
+    }
+    h4{
+      padding: 8px 0px;
+    }
   }
 }
 

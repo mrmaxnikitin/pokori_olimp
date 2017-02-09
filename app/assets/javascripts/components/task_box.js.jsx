@@ -6,7 +6,7 @@ const TaskBox = React.createClass({
   getInitialState: function () {
     return {
       complete_task: false,
-      tasks_count: 10,
+      tasks_count: 3,
       tasks: [],
       num_current_task: 0,
       status_current_task: 0,   // 0 в процессе ответа, -1 неправильно, 1 правильно
@@ -242,6 +242,28 @@ const TaskBox = React.createClass({
         <div className='participate-page'>
           <div className='participate-result-diploma'>
             <div className='card pd40 h1 mbm'>Вы можете приобрести свой диплом в разделе <a href='/rewards'>ИТОГИ</a>.</div>
+          </div>
+          <div className='tac other-our-sites'>
+            <h1 className='clrw'>Примите участие в наших олимпиадах на других сайтах</h1>
+            <div className='col-main ma mtm'>
+              <div className='col-3of6 pd10 fl'>
+                <a href='http://joy-olympic.ru' target='_blank'>
+                  <div className='card'>
+                    <img src='/images/beecan.gif' />
+                    <h4>joy-olympic.ru</h4>
+                  </div>
+                </a>
+              </div>
+              <div className='col-3of6 pd10 fl'>
+                <a href='http://sprint-olympic.ru' target='_blank'>
+                  <div className='card'>
+                    <img src='/images/run.gif' />
+                    <h4>sprint-olympic.ru</h4>
+                  </div>
+                </a>
+              </div>
+              <div className='clear'></div>
+            </div>
           </div>
         </div>
       );
