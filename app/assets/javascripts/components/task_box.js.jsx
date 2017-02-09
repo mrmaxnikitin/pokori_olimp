@@ -6,7 +6,7 @@ const TaskBox = React.createClass({
   getInitialState: function () {
     return {
       complete_task: false,
-      tasks_count: 3,
+      tasks_count: 10,
       tasks: [],
       num_current_task: 0,
       status_current_task: 0,   // 0 в процессе ответа, -1 неправильно, 1 правильно
