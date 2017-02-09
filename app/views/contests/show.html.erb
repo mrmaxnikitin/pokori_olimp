@@ -9,18 +9,22 @@
 			<div class='statistic'>
 				Участники: <b class='participants'><%= @number_participants %></b>
 				<h4>Выберите класс и участвуйте!</h4>
-				<%= link_to '1', participate_contest_path(@contest, classroom: 1), class: 'btn btn-our btn-our-green' %>
-				<%= link_to '2', participate_contest_path(@contest, classroom: 2), class: 'btn btn-our btn-our-green' %>
-				<%= link_to '3', participate_contest_path(@contest, classroom: 3), class: 'btn btn-our btn-our-green' %>
-				<%= link_to '4', participate_contest_path(@contest, classroom: 4), class: 'btn btn-our btn-our-green' %>
-				<% if @contest.id != 3%>
+				<% if @contest.id != 5 && @contest.id != 6 && @contest.id != 7 %>
+					<%= link_to '1', participate_contest_path(@contest, classroom: 1), class: 'btn btn-our btn-our-green' %>
+					<%= link_to '2', participate_contest_path(@contest, classroom: 2), class: 'btn btn-our btn-our-green' %>
+					<%= link_to '3', participate_contest_path(@contest, classroom: 3), class: 'btn btn-our btn-our-green' %>
+					<%= link_to '4', participate_contest_path(@contest, classroom: 4), class: 'btn btn-our btn-our-green' %>
+				<% end %>
+				<% if @contest.id != 3 %>
 					<%= link_to '5', participate_contest_path(@contest, classroom: 5), class: 'btn btn-our btn-our-green' %>
 					<%= link_to '6', participate_contest_path(@contest, classroom: 6), class: 'btn btn-our btn-our-green' %>
 					<%= link_to '7', participate_contest_path(@contest, classroom: 7), class: 'btn btn-our btn-our-green' %>
-					<%= link_to '8', participate_contest_path(@contest, classroom: 8), class: 'btn btn-our btn-our-green' %>
-					<%= link_to '9', participate_contest_path(@contest, classroom: 9), class: 'btn btn-our btn-our-green' %>
-					<%= link_to '10', participate_contest_path(@contest, classroom: 10), class: 'btn btn-our btn-our-green' %>
-					<%= link_to '11', participate_contest_path(@contest, classroom: 11), class: 'btn btn-our btn-our-green' %>
+					<% if @contest.id != 8 %>
+						<%= link_to '8', participate_contest_path(@contest, classroom: 8), class: 'btn btn-our btn-our-green' %>
+						<%= link_to '9', participate_contest_path(@contest, classroom: 9), class: 'btn btn-our btn-our-green' %>
+						<%= link_to '10', participate_contest_path(@contest, classroom: 10), class: 'btn btn-our btn-our-green' %>
+						<%= link_to '11', participate_contest_path(@contest, classroom: 11), class: 'btn btn-our btn-our-green' %>
+					<% end %>
 				<% end %>
 			</div>
 			<p><%= @contest.description %></p>
