@@ -26,11 +26,13 @@ class Reward < ActiveRecord::Base
     end
 
     institution = self.institution
+    margin_text = -80
     if institution.size > 44
       institution_44 = institution[0, 44]
       index_inst = institution_44.rindex(" ")
       fp_institution = institution[0, index_inst]
       sp_institution = institution[index_inst+1, institution.size]
+      margin_text = 0
     end
 
     image.resize "1654x2339"
@@ -57,12 +59,12 @@ class Reward < ActiveRecord::Base
       end
       c.pointsize '43'
       if self.prize != 0
-        c.draw "text 505,#{position+480} 'за победу во Всероссийской олимпиаде'"
+        c.draw "text 505,#{position+480+margin_text} 'за победу во Всероссийской олимпиаде'"
       else
-        c.draw "text 505,#{position+480} 'за участие во Всероссийской олимпиаде'"
+        c.draw "text 505,#{position+480+margin_text} 'за участие во Всероссийской олимпиаде'"
       end
       c.pointsize '43'
-      c.draw "text 505,#{position+560} '#{subject}'"
+      c.draw "text 505,#{position+560+margin_text} '#{subject}'"
       c.pointsize '30'
       c.draw "text 767,1650 '#{Russian::strftime(self.created_at, "%d.%m.%Y г.")}'"
       c.pointsize '26'
