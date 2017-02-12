@@ -1,7 +1,7 @@
 ActiveAdmin.register Reward do
 permit_params :name, :age, :institution, :prize, :score, :paid, :number, :contest_id, :user_id
 actions :index, :show, :destroy, :edit, :update, :new, :create
-menu label: 'Задания'
+menu label: 'Дипломы'
 
 filter :id
 filter :user_id, label: "user id"
