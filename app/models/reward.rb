@@ -15,6 +15,14 @@ class Reward < ActiveRecord::Base
       subject = "по окружающему миру"
     elsif self.contest_id == 4
       subject = "по литературе"
+    elsif self.contest_id == 5
+      subject = "по биологии"
+    elsif self.contest_id == 6
+      subject = "по географии"
+    elsif self.contest_id == 7
+      subject = "по истории"
+    elsif self.contest_id == 8
+      subject = "по ОБЖ"
     end
 
     institution = self.institution
