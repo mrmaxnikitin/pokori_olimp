@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   post 'get_activate_diploma' => 'rewards#get_activate_diploma'
   
   get 'honors' => 'static_pages#honors'
+  get 'sites' => 'static_pages#sites'
   get 'instruction' => 'static_pages#instruction'
   get 'contacts' => 'static_pages#contacts'
   get 'logout' => 'sessions#destroy'

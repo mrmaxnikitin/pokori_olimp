@@ -122,4 +122,60 @@
 		border: 1px solid #E7E7E7;
 	}
 }
+.our-site{
+	.card{
+		width: 70%;
+		margin-top: 50px;
+		padding: 40px;
+	}
+	.golden_section38{
+		img{
+			width: 100%;
+		}
+	}
+	.golden_section62{
+		padding-left: 20px;
+		.description{
+			font-size: 18px;
+			margin-top: 20px;
+		}
+	}
+}
+.others-our-sites-on-welcome{
+	font-size: 40px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	img{
+		width: 50px !important;
+		position: relative;
+		top: 10px;
+	}
+}
 
+@media screen and (max-width: 800px) {
+  #slide-content1{
+    width: 100%;
+    left: 5%;
+    right: 5%;
+    .logoname{
+    	margin-top: 0px;
+    }
+  }
+  .advantages-home{
+		.col{
+			width: 100% !important;
+		}
+	}
+	.olympics-home{
+		.col-press-25{
+			width: 50%;
+		}
+	}
+}
