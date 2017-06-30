@@ -29,32 +29,7 @@
 		<h4 class='mbm'>Диплом станет доступен для скачивания в течение 12 часов после оплаты</h4>
 		<a id='buy-diploma' class='btn btn-our btn-our-green'>Приобрести этот диплом за 100 рублей</a>
 		<div class='payment-form'>
-			<form target="_blank" action="https://money.yandex.ru/eshop.xml" method="post">
-				<input type="hidden" name="shopId" value="50046">
-				<input type="hidden" name="scid" value="34157">
-				<input type="hidden" name="customerNumber" size="43" value="<%= @reward.id %>">
-				
-				<b>E-mail:</b><br>
-				<input name="custEmail" type="text" size="43"><br><br>
-
-				<b>ФИО плательщика:</b><br>
-				<input name="custName" type="text" size="43"><br><br>
-				
-				<b>Сумма: 100 рублей</b><br>
-				<input type="hidden" name="sum" type = "text" value="100" size="43"><br>
-				
-				<b>Способ оплаты:</b><br>
-				<input name="paymentType" value="PC" type="radio"> Оплата со счета в Яндекс.Деньгах<br>
-				<input name="paymentType" value="AC" type="radio"> Оплата банковской картой<br>
-				<input name="paymentType" value="GP" type="radio"> Оплата по коду через терминал<br>
-				<input name="paymentType" value="WM" type="radio"> Оплата cо счета WebMoney<br>
-				<input name="paymentType" value="AB" type="radio"> Оплата через Альфа-Клик<br>
-				<input name="paymentType" value="PB" type="radio"> Оплата через Промсвязьбанк<br>
-				<input name="paymentType" value="MA" type="radio"> Оплата через MasterPass<br><br>
-				
-				<input type="submit" class="btn btn-our btn-our-green" value="Оплатить"/>
-				</br>
-			</form>
+			<h4>Оплата временно недоступна.</h4>
 		</div>
 	<% else %>
 		<div class='col-3of6 ma mtl img-diploma'>
