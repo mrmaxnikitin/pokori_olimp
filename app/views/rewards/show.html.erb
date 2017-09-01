@@ -29,9 +29,24 @@
 		<h4 class='mbm'>Диплом станет доступен для скачивания в течение 12 часов после оплаты</h4>
 		<a id='buy-diploma' class='btn btn-our btn-our-green'>Приобрести этот диплом за 100 рублей</a>
 		<div class='payment-form'>
-			<h3>1. Скачайте квитанцию <a target='_blank' href='http://joy-olympic.ru/_receipt.jpg'><b>ЗДЕСЬ</b></a></h3>
-			<h3>2. Оплатите через банк</h3>
-			<h3>3. Загрузите оплаченную квитанцию на почту <b>centerAurum@yandex.ru</b> с указанием номера диплома. Номер этого диплома <b><%= @reward.id %></b>.</h3>	
+			<form action='https://money.yandex.ru/eshop.xml' method='post'>
+					<input required name='shopId' value='50046' type='hidden'/>
+					<input required name='scid' value='34157' type='hidden'/>
+					<input required name='sum' value='100' type='hidden'><br>
+					<input required name='customerNumber' value='<%=@reward.id%>' size='64' type='hidden'/><br>
+								
+					<label>Ваш Email:</label><br>	
+					<input class='custEmail' name='custEmail' value='' size='64' type='text'/><br><br>
+					
+					<label>Ваше ФИО:</label><br>
+					<input class='custName' name='custName' value='' size='64' type='text'/><br>
+
+					
+					<input class='ym_merchant_receipt' name='ym_merchant_receipt' value='{\"customerContact\":
+\"onlineyageniy@yandex.ru\",\"taxSystem\": 2,\"items\": [{\"quantity\": 1,\"price\": {\"amount\": 1.00},\"tax\": 1,\"text\": \"Услуги по обработке данных\"}]}' type="hidden"/>
+					<br>
+					<input id='getpay' class='btn btn-our btn-our-green' type='submit' value='Оплатить' disabled='disabled'>	
+			</form>
 		</div>
 	<% else %>
 		<div class='col-3of6 ma mtl img-diploma'>
