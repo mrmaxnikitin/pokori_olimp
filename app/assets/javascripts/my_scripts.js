@@ -11,7 +11,7 @@ $(document).on("page:load ready", function main(){
 
 	  $('.custEmail').change(function(){
 			custEmail = $('.custEmail').val()
-    	  		$('.ym_merchant_receipt').val('{\"customerContact\":\"'+custEmail+'\",\"taxSystem\": 2,\"items\": [{\"quantity\": 1,\"price\": {\"amount\": 1.00},\"tax\": 1,\"text\": \"Услуги по обработке данных\"}]}')
+    	  		$('.ym_merchant_receipt').val('{\"customerContact\":\"'+custEmail+'\",\"taxSystem\": 2,\"items\": [{\"quantity\": 1,\"price\": {\"amount\": 100.00},\"tax\": 1,\"text\": \"Услуги по обработке данных\"}]}')
 	 	});
 	 	
 	 	$('.custEmail').change(function(){
