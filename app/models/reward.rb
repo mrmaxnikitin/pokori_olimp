@@ -23,6 +23,8 @@ class Reward < ActiveRecord::Base
       subject = "по истории"
     elsif self.contest_id == 8
       subject = "по ОБЖ"
+    elsif self.contest_id == 9
+      subject = "по английскому языку"
     end
 
     institution = self.institution
