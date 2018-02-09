@@ -3,7 +3,7 @@ class RewardsController < ApplicationController
   before_action :require_admin, only: [:activate_diploma]
 
   def index
-    @rewards = Reward.order(created_at: "DESC").all
+    @rewards = Reward.order(created_at: "DESC").limit(1500)
   end
 
   def show
